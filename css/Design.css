@@ -1,0 +1,73 @@
+html {
+       font-size:100%;
+     }
+body {
+    background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,100,0.1)),url(Monterey.jpg);
+    color: #fff;
+    font-family: sans-serif;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    <margin-top: 150px;>
+    font-size: 45px;
+    text-shadow: 1px 1px 4px blue, 0 0 0.2em #40E0D0;
+}
+
+p{
+    font-size: 25px;
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul:hover li a {
+    filter: blur(5px);
+}
+
+ul:hover li a:hover{
+    font-size: 30px;
+    filter: blur(0px);
+}
+
+li{
+    display: block;
+    padding: 0 20px;
+    color: #fff;
+    font-size: 25px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+li a{
+    text-decoration: none;
+    color:#fff;
+    transition: .5s;
+    padding: 10px;
+}
+input {
+    font-size: 15px;
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
+form {
+    width: 500px;
+}
+
+table {
+    align: center;
+}
+
+.disclaimer{
+display:none;
+    
+}

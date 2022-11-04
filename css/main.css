@@ -1,0 +1,454 @@
+@charset "UTF-8";
+.index {
+  /* Стили для скролла */
+}
+.index * {
+  font-size: 18px;
+}
+.index th, .index td {
+  padding: 10px;
+}
+.index th {
+  background: #606060;
+  color: #fff;
+}
+.index td {
+  background: #b5b5b5;
+  color: black;
+}
+ form {
+  width: 555px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.index a {
+  text-decoration: none;
+}
+.index .addTex {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.index .sort {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+.index .sort a {
+  color: #C4C4C4;
+  text-decoration: none;
+  margin: 0 5px;
+  border-bottom: 1px dashed #D8D8D8;
+}
+.index .table {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.index button {
+  width: 140;
+  display: inline-block;
+  padding: 10px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
+}
+.index button:hover {
+  background-color: white;
+  color: black;
+}
+.index button:active {
+  background-color: white;
+  box-shadow: 0 2px #666;
+  transform: translateY(4px);
+}
+ input {
+  font-size: 18px;
+  padding: 7px;
+}
+ textarea {
+  resize: none;
+  overflow: auto;
+  font-size: 18px;
+  width: 100%;
+  padding: 7px;
+}
+.index .scroll-table-body {
+  height: 555px;
+  overflow-x: auto;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+.scroll-table{
+  width: 80%;
+  margin: 0 auto;
+}
+.index .scroll-table table {
+  word-break: break-all;
+  width: 100%;
+  table-layout: fixed;
+  border: none;
+}
+.index .scroll-table thead th {
+  padding: 7px;
+  background: #606060;
+  color: #fff;
+  width: 15px;
+  height: 50px;
+  align: middle;
+}
+.index .scroll-table tbody td {
+  padding: 7px;
+  background: #b5b5b5;
+  color: black;
+  width: 15px;
+  height: 50px;
+  align: middle;
+}
+.index .scroll-table tbody tr:nth-child(even) {
+  background: #f3f3f3;
+}
+.index .scroll-table-body::-webkit-scrollbar {
+  display: none;
+}
+.index ::-webkit-scrollbar {
+  width: 6px;
+}
+.index ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.index ::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+main {
+  width: 97%;
+}
+html {
+  font-size: 100%;
+}
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 100, 0.1)), url(Monterey.jpg);
+  color: #fff;
+  font-family: sans-serif;
+}
+ h1 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 11px;
+  font-size: 45px;
+  text-shadow: 1px 1px 4px blue, 0 0 0.2em #40E0D0;
+}
+ p {
+  font-size: 25px;
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+}
+ ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ ul:hover li a {
+  filter: blur(5px);
+}
+ ul:hover li a:hover {
+  font-size: 30px;
+  filter: blur(0px);
+}
+ li {
+  display: block;
+  padding: 0 20px;
+  color: #fff;
+  font-size: 25px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+li a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.5s;
+  padding: 10px;
+}
+ input {
+  font-size: 18px;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+.form {
+  width: 500px;
+}
+ table {
+  align: center;
+}
+
+/*___________   ADMIN   ______________*/
+.admin * {
+  font-size: 20px;
+}
+.admin .form_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.admin a {
+  color: white;
+  text-decoration: none;
+}
+.admin form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.admin button {
+  width: 140;
+  display: inline-block;
+  padding: 10px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
+}
+.admin button:hover {
+  background-color: white;
+  color: black;
+}
+.admin button:active {
+  background-color: white;
+  box-shadow: 0 2px #666;
+  transform: translateY(4px);
+}
+.admin input {
+  width: 100%;
+  padding: 7px;
+  flex: 0 1 auto;
+  margin-top: 24px;
+  border-radius: 5px;
+  padding: 6px 9px;
+  outline: none;
+  font-size: 18px;
+}
+.admin textarea {
+  resize: none;
+  overflow: auto;
+  font-size: 18px;
+  width: 40em;
+  height: 1.5em;
+}
+
+/*________________   FEEDBACK   ___________________*/
+.feedback * {
+  font-size: 24px;
+}
+.feedback .wrapper, .feedback html, .feedback body {
+  min-height: 100vh;
+  width: 100%;
+}
+.feedback .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.feedback .feedback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.feedback .feedback__title {
+  font-weight: 500;
+  font-size: 27px;
+  margin-bottom: 12px;
+}
+.feedback .feedback__form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.feedback .form__input {
+  flex: 0 1 auto;
+  margin-top: 24px;
+  border-radius: 5px;
+  padding: 6px 9px;
+  outline: none;
+  font-size: 18px;
+}
+.feedback .error {
+  background-color: #FFCEE3;
+  padding: 12px;
+  border: 1.5px solid #E4637A;
+  color: #E4637A;
+  border-radius: 5px;
+}
+.feedback .result {
+  padding: 12px;
+  border-radius: 5px;
+  border: 1.5px solid #58CCFF;
+  color: #58CCFF;
+  background-color: #B8F5FF;
+}
+.feedback {
+  /* Стили для скролла */
+}
+.feedback * {
+  font-size: 18px;
+}
+.feedback form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.feedback a {
+  text-decoration: none;
+}
+.feedback .addTex {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.feedback .sort {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+.feedback .sort a {
+  color: #C4C4C4;
+  text-decoration: none;
+  margin: 0 10px;
+  border-bottom: 1px dashed #D8D8D8;
+}
+.feedback .table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.feedback button {
+  width: 140;
+  display: inline-block;
+  padding: 10px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
+}
+.feedback button:hover {
+  background-color: white;
+  color: black;
+}
+.feedback button:active {
+  background-color: white;
+  box-shadow: 0 2px #666;
+  transform: translateY(4px);
+}
+.feedback input {
+  width: 100%;
+  padding: 7px;
+  font-size: 18px;
+}
+.feedback .resText, .feedback .result, .feedback .error {
+  color: white;
+  background: transparent;
+  border-color: transparent;
+  font-size: 20px;
+}
+.feedback textarea {
+  resize: none;
+  overflow: auto;
+  font-size: 18px;
+  width: 100%;
+  padding: 7px;
+}
+
+.feedback .feedback {
+  width: 100%;
+  min-width: 300px;
+  max-width: 500px;
+  padding: 0 20px;
+}
+.feedback .feedback__form {
+  width: 100%;
+}
+
+/*___________________  UPDATE  ___________________*/
+.update * {
+  font-size: 18px;
+}
+.update .block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.update button {
+  display: inline-block;
+  padding: 10px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
+}
+.update button:hover {
+  background-color: white;
+  color: black;
+}
+.update button:active {
+  background-color: white;
+  box-shadow: 0 2px #666;
+  transform: translateY(4px);
+}
+.update input {
+  width: 100%;
+  padding: 7px;
+  font-size: 18px;
+}
+.update textarea {
+  resize: none;
+  overflow: auto;
+  font-size: 18px;
+  width: 100%;
+  padding: 7px;
+}
+.update p {
+  font-size: 20px;
+}
+
+.disclaimer{
+display:none;
+    
+}
