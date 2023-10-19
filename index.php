@@ -1,11 +1,6 @@
 <?php
 
 require_once 'config/connect.php';
-$views = json_decode(file_get_contents("views.json"));
-$views->table++;
-file_put_contents('views.json', json_encode($views));
-
-/* echo 'Количество посещений: '.$views->table; */
   
 if (isset($_POST['addForm'])) {
 $errors = [];
@@ -18,27 +13,7 @@ $errors = [];
   $categoryLen = mb_strlen(trim($_POST['category'])) ;
   $inventoryLen = mb_strlen(trim($_POST['inventory'])) ;
   $titleLen = mb_strlen(trim($_POST['title'])) ;
-  /*
-  if ($departamentLen > 50) {
-    $errors['departament'] = 'Введите не более 50 символов';
-  }elseif ($departamentLen < 5) {
-    $errors['departament'] = 'Введите не менее 5 символов';
-  }elseif ($departamentLen > 0 and !preg_match('/[^0-9]/', $departament)){
-    $errors['departament'] = 'Поле не может состоять только из цифр';
-  }elseif($departamentLen > 0 and preg_match("/[A-Za-z!@#$%^&*(:)№;?~`<>'{}()|\/<>]/iu", $departament)){
-    $errors['departament'] = 'Поле может содержать только кириллицу или цифры';
-  } 
-  
-  if ($categoryLen > 20) {
-    $errors['category'] = 'Введите не более 20 символов';
-  }elseif ($categoryLen < 2) {
-    $errors['category'] = 'Введите не менее 2 символов';
-  }elseif ($categoryLen > 0 and !preg_match('/[^0-9]/', $category)){
-    $errors['category'] = 'Поле не может состоять только из цифр';
-  }elseif($categoryLen > 0 and preg_match("/[A-Za-z!@#$%^&*(:)№;?~`<>'{}()|\/<>]/iu", $category)){
-    $errors['category'] = 'Поле может содержать только кириллицу или цифры'; 
-  }
-  */
+
   if ($inventoryLen < 1) {
     $errors['inventory'] = 'Введите не менее 1 символа';
   }elseif ($inventoryLen > 5) {
@@ -67,25 +42,9 @@ $errors = [];
 }
 ?>
 
-<DOCTUPE HTML!>
-    <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Промэнергобезопасность</title>
-        <link rel="stylesheet" href="css/main.css">
-    </head>
-    <body>
-        <h1><img src="css/peb.png" width="177" height="123" align="middle">Промэнергобезопасность</h1>
-        <ul>
-            <li><a href="index.php">База данных</a></li>
-            <li><a href="admin.php">Администратор</a></li>
-            <li><a href="back.php">Обратная связь</a></li>
-        </ul>
-    </body>
-</html>
-
-<!DOCTYPE html>
+<DOCTYPE html!>
 <html>
+    <link rel="stylesheet" href="css/main.css">
 <head>
     <meta charset="utf-8">
     <title>Промэнергобезопасность</title>
@@ -127,6 +86,12 @@ $errors = [];
         }
     }
     ?>
+        <h1><img src="css/peb.png" width="177" height="123" align="middle">Промэнергобезопасность</h1>
+        <ul>
+            <li><a href="index.php">База данных</a></li>
+            <li><a href="admin.php">Администратор</a></li>
+            <li><a href="back.php">Обратная связь</a></li>
+        </ul>
     <div class="table">
         <div class="sort" style="display: inline-block; text-align: center;">
             <form action="export.php" method="GET">

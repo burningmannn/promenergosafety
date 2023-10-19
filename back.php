@@ -19,9 +19,6 @@ if (isset($_POST['mail'])) {
     }elseif (mb_strlen($message) < 5 || mb_strlen($message) > 255) {
         $errors[] = 'Не корректная длина сообщения (допустимо 5-255 символов)!';
     }
-    /*elseif (!preg_match('/^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/',$phone)) {
-        $errors[] = 'Не корректный номер телефона! (Может начинаться с 8/+7 и содержать 11 цифр)';
-    }*/
     
     if (empty($errors)) {
         $from = "Promenergoekb@gmail.com"; 
@@ -45,25 +42,7 @@ file_put_contents('views.json', json_encode($views));
 echo 'Количество посещений: '.$views->mail;
 ?>
 
-<DOCTUPE HTML!>
-    <html>
-    <head>
-        <meta charset="UTF-8">
-        <link href="css/favicon.ico" rel="shortcut icon" type="image/x-icon">
-        <title>Промэнергобезопасность</title>
-        <link rel="stylesheet" href="css/Design.css">
-    </head>
-    <body>
-        <h1><img src="css/peb.png" width="177" height="123" align="middle">Промэнергобезопасность</h1>
-        <ul>
-            <li><a href="index.php">База данных</a></li>
-            <li><a href="admin.php">Администратор</a></li>
-            <li><a href="back.php">Обратная связь</a></li>
-        </ul>
-    </body>
-</html>
-
-<!DOCTYPE html>
+<DOCTYPE html!>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -86,7 +65,12 @@ echo 'Количество посещений: '.$views->mail;
                     ';
                 }
             ?>
-            <!--<div class="feedback__title"></div>-->
+        <h1><img src="css/peb.png" width="177" height="123" align="middle">Промэнергобезопасность</h1>
+        <ul>
+            <li><a href="index.php">База данных</a></li>
+            <li><a href="admin.php">Администратор</a></li>
+            <li><a href="back.php">Обратная связь</a></li>
+        </ul>
             <h3 style="font-size: 20px;">Сообщить об ошибке</h3>
             <?php
               if (!empty($errors)) {

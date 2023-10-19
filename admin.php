@@ -12,7 +12,7 @@ if (isset($_POST['btn-in'])) {
     $r_host = "localhost";
     $r_user = "root";
     $r_password = "";
-    $r_database = "register";
+    $r_database = "prom";
     $check = new mysqli($r_host, $r_user, $r_password, $r_database);
     
     if ($passLen == 0 || $loginLen == 0) {
@@ -95,35 +95,22 @@ if(isset($_POST['categ'])) {
 }
 ?>
 
-<DOCTUPE HTML!>
-    <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Промэнергобезопасность</title>
-        <link href="css/favicon.ico" rel="shortcut icon" type="image/x-icon">
-        <link rel="stylesheet" href="css/Design.css">
-                <link rel="stylesheet" href="css/main.css">
-        
-    </head>
-    <body>
-        <h1><img src="css/peb.png" width="177" height="123" align="middle">Промэнергобезопасность</h1>
-        <ul>
-            <li><a href="index.php">База данных</a></li>
-            <li><a href="admin.php">Администратор</a></li>
-            <li><a href="back.php">Обратная связь</a></li>
-        </ul>
-    </body>
-</html>
-
-<!DOCTYPE html>
+<DOCTYPE html!>
 <html>
 <head>
     <meta charset="UTF-8">
     <title>Промэнергобезопасность</title>
     <link href="css/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="css/Design.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body class="admin">
-
+    <h1><img src="css/peb.png" width="177" height="123" align="middle">Промэнергобезопасность</h1>
+    <ul>
+        <li><a href="index.php">База данных</a></li>
+        <li><a href="admin.php">Администратор</a></li>
+        <li><a href="back.php">Обратная связь</a></li>
+    </ul>
     <?php
     if (!isset($_COOKIE['user'])) $_COOKIE['user'] = '';
     if ($_COOKIE ['user'] == 'nenuzhno'):

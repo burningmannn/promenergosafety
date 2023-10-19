@@ -1,3 +1,12 @@
+-- phpMyAdmin SQL Dump
+-- version 5.2.0
+-- https://www.phpmyadmin.net/
+--
+-- Хост: 127.0.0.1:3306
+-- Время создания: Окт 16 2023 г., 15:14
+-- Версия сервера: 5.6.51
+-- Версия PHP: 7.2.34
+
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
@@ -120,6 +129,26 @@ INSERT INTO `technic` (`id`, `departament`, `category`, `inventory`, `title`) VA
 (37, 9, 25, 4815, 'HP StorageWorks 416 SAN'),
 (38, 9, 25, 800, 'Catalyst'),
 (39, 9, 24, 410, 'Hengshanlao 1500VA');
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `users`
+--
+
+CREATE TABLE `users` (
+  `id` int(11) UNSIGNED NOT NULL,
+  `name` varchar(25) NOT NULL,
+  `login` varchar(25) NOT NULL,
+  `pass` varchar(25) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `users`
+--
+
+INSERT INTO `users` (`id`, `name`, `login`, `pass`) VALUES
+(1, 'adminpanel', 'adminpanel', 'promenergo2022');
 
 --
 -- Индексы сохранённых таблиц

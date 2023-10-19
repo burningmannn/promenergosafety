@@ -50,25 +50,9 @@ if (isset($_POST['update'])) {
 
 
 }
-?>
+?> 
 
-<DOCTUPE HTML!>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <link href="css/favicon.ico" rel="shortcut icon" type="image/x-icon">
-        <title>Промэнергобезопасность</title>
-        <link rel="stylesheet" href="css/main.css">
-    </head>
-    <body>
-        <h1><img src="css/peb.png" width="177" height="123" align="middle">Промэнергобезопасность</h1>
-        <ul>
-            <li><a href="index.php">База данных</a></li>
-        </ul>
-    </body>
-</html>  
-
-<!DOCTYPE html>
+<DOCTYPE html!>
 <html lang="ru">
 <head>
     <link href="css/favicon.ico" rel="shortcut icon" type="image/x-icon">
@@ -78,6 +62,11 @@ if (isset($_POST['update'])) {
 <body class="update">
     <div class="block">
         <h3>Обновить оборудование</h3>
+        <link rel="stylesheet" href="css/main.css">
+        <h1><img src="css/peb.png" width="177" height="123" align="middle">Промэнергобезопасность</h1>
+        <ul>
+            <li><a href="index.php">База данных</a></li>
+        </ul>
         <form action="#" method="post">
             <input type="hidden" name="id" value="<?= $technic['id']?>">
             <p>Отдел</p>
